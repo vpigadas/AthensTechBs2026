@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.snackbar.Snackbar;
 
 import gr.athenstech.course.databinding.ActivityMainBinding;
+import gr.athenstech.course.list.RecyclerActivity;
 import gr.athenstech.course.network.NetworkActivity;
 import gr.athenstech.course.sample.SplashActivity;
 
@@ -72,6 +73,16 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("MainActivity", "Sample button clicked");
 
                 Intent intent = new Intent(MainActivity.this, SplashActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.mainBtnRecycler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("MainActivity", "Recycler button clicked");
+
+                Intent intent = new Intent(MainActivity.this, RecyclerActivity.class);
                 startActivity(intent);
             }
         });
