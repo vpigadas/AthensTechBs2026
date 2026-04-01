@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">AthensTechBs2026</string>
+    <string name="dev_name">Vassilis Pigadas</string>
+    <string name="sample_name">Sample</string>
+</resources>
