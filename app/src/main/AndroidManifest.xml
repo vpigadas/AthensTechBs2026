@@ -14,6 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AthensTechBs2026">
         <activity
+            android:name=".storage.DatabaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".storage.StorageActivity"
+            android:exported="false" />
+        <activity
             android:name=".list.RecyclerActivity"
             android:exported="false" />
         <activity
