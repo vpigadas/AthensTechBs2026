@@ -18,6 +18,8 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         Log.d("SplashActivity", "onCreate called");
+
+        binding.viewpager.setAdapter(new CustomPagerAdapter(getSupportFragmentManager()));
     }
 
     @Override

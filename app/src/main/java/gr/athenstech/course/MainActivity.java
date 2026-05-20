@@ -10,10 +10,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.FragmentActivity;
 
 import com.google.android.material.snackbar.Snackbar;
 
 import gr.athenstech.course.databinding.ActivityMainBinding;
+import gr.athenstech.course.fragments.MyFragmentActivity;
 import gr.athenstech.course.list.RecyclerActivity;
 import gr.athenstech.course.network.NetworkActivity;
 import gr.athenstech.course.sample.SplashActivity;
@@ -105,6 +107,16 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("MainActivity", "Database button clicked");
 
                 Intent intent = new Intent(MainActivity.this, DatabaseActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.mainBtnFragment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("MainActivity", "Fragment button clicked");
+
+                Intent intent = new Intent(MainActivity.this, MyFragmentActivity.class);
                 startActivity(intent);
             }
         });
